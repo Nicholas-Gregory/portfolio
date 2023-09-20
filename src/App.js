@@ -32,7 +32,12 @@ function App() {
           </div>
         }
         {page === 'contact' &&
-          <ContactForm />
+          <>
+            <p>
+              Here's a form for getting in contact with me if you require the services of a creative web developer.
+            </p>
+            <ContactForm />
+          </>
         }
         {page === 'resume' &&
           <div id="resume">
