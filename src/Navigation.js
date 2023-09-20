@@ -9,6 +9,25 @@ const unselectedStyle = {
     backgroundColor: "black"
 };
 
+const pageOptions = [
+    {
+       key: 'about',
+       text: 'About Me'
+    },
+    {
+        key: 'portfolio',
+        text: 'Portfolio'
+    },
+    {
+        key: 'contact',
+        text: 'Contact Me'
+    },
+    {
+        key: 'resume',
+        text: 'My Resume'
+    }
+]
+
 export default function Navigation({ select }) {
     const [selected, setSelected] = useState('about');
 
@@ -26,10 +45,9 @@ export default function Navigation({ select }) {
     return (
         <>
             <div onClick={handleClick}>
-                <button id="about" style={ selected === "about" ? selectedStyle : unselectedStyle}>About Me</button>
-                <button id="portfolio" style={ selected === "portfolio" ? selectedStyle : unselectedStyle}>Portfolio</button>
-                <button id="contact" style={ selected === "contact" ? selectedStyle : unselectedStyle}>Contact Me</button>
-                <button id="resume" style={ selected === "resume" ? selectedStyle : unselectedStyle}>Resume</button>
+                {pageOptions.map(option =>
+                    <button id={option.key} key={option.key} style={selected === option.key ? selectedStyle : unselectedStyle}>{option.text}</button>
+                )}
             </div>
         </>
     );
