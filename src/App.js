@@ -1,3 +1,4 @@
+import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import Header from "./Header";
 import Navigation from "./Navigation";
@@ -19,7 +20,10 @@ function App() {
       <section>
         {page === 'about' && 
           <div id="about">
-            about
+            Hi! I am a full-stack web developer with experience in many technologies including React, GraphQL, Express and SQL/No-SQL databases.
+            This page is where I put information about my various projects, as well as links to my social media accounts, along with a resume for prospective employers.
+            If you want to contact me, there is a Contact link on the navbar above with a form you can fill out.
+            Thanks for visiting my little page!
           </div>
         }
         {page === 'portfolio' &&
@@ -28,9 +32,7 @@ function App() {
           </div>
         }
         {page === 'contact' &&
-          <div id="contact">
-            contact
-          </div>
+          <ContactForm />
         }
         {page === 'resume' &&
           <div id="resume">
