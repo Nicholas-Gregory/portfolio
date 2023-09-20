@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Footer";
+import Header from "./Header";
+import Navigation from "./Navigation";
+import { useState } from "react";
 
 function App() {
+  const [page, setPage] = useState('about');
+
+  function handleSelect(selectedPage) {
+    setPage(selectedPage);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header>
+        <Navigation select={handleSelect}/>
+      </Header>
+
+      <section>
+        {page === 'about' && 
+          <div id="about">
+            about
+          </div>
+        }
+        {page === 'portfolio' &&
+          <div id="portfolio">
+            portfolio
+          </div>
+        }
+        {page === 'contact' &&
+          <div id="contact">
+            contact
+          </div>
+        }
+        {page === 'resume' &&
+          <div id="resume">
+            resume
+          </div>
+        }
+      </section>
+
+      <Footer />
+    </>
   );
 }
 
