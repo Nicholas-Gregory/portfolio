@@ -82,7 +82,36 @@ function App() {
         }
         {page === 'resume' &&
           <div id="resume">
-            resume
+            <h2>
+              My Skills:
+            </h2>
+            <h3>
+              Languages:
+            </h3>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JSX</li>
+              <li>SQL</li>
+              <li>GraphQL</li>
+            </ul>
+            <h3>Libraries</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Sequelize</li>
+              <li>Mongoose</li>
+              <li>React</li>
+              <li>Express</li>
+            </ul>
+            <h2>
+              Education
+            </h2>
+            <p>University of Oregon/EDX Fullstack Bootcamp</p>
+            <h2>
+              Experience
+            </h2>
+            <p>See the Projects tab</p>
           </div>
         }
       </section>
