@@ -17,6 +17,24 @@ const projects = [{
   title: "Note Taker",
   deployedLink: "https://nb-bootcamp-note-taker-f19da58a1664.herokuapp.com/",
   githubLink: "https://github.com/Nicholas-Gregory/Note_Taker"
+},
+{
+  imgPath: "https://github.com/Nicholas-Gregory/News-API-app-with-Definition-Searching/raw/main/news-app-3.png",
+  title: "News Aggregator",
+  deployedLink: "https://jensandage1.github.io/News-API-app-with-Definition-Searching/",
+  githubLink: "https://github.com/Nicholas-Gregory/News-API-app-with-Definition-Searching"
+},
+{
+  imgPath: "https://github.com/Nicholas-Gregory/Weather/raw/main/assets/images/screenshot.png",
+  title: "Simple Weather",
+  deployedLink: "https://nicholas-gregory.github.io/Weather/",
+  githubLink: "https://github.com/Nicholas-Gregory/Weather"
+},
+{
+  imgPath: "https://github.com/taylorgehrts/KIDDO_KARE/raw/main/public/images/Screenshot%202023-08-18%20at%209.47.16%20AM.png",
+  title: "Kiddo Kare",
+  deployedLink: "https://hidden-eyrie-72629-9ca91495354a.herokuapp.com/",
+  githubLink: "https://github.com/taylorgehrts/KIDDO_KARE"
 }]
 
 function App() {

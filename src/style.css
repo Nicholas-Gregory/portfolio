@@ -31,3 +31,15 @@
 .projectLinks a {
     display: block;
 }
+
+@media screen and (max-width: 720px) {
+    #portfolioContainer {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .projectImage {
+        height: 30%;
+    }
+}
