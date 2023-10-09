@@ -3,6 +3,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import { useState } from "react";
+import Project from "./Project";
+import './style.css'
 
 function App() {
   const [page, setPage] = useState('about');
@@ -27,8 +29,13 @@ function App() {
           </div>
         }
         {page === 'portfolio' &&
-          <div id="portfolio">
-            portfolio
+          <div id="portfolioContainer">
+            <Project
+              imgPath={"https://raw.githubusercontent.com/Nicholas-Gregory/Blog/main/screenshot.png"}
+              title={"Simple Blog"}
+              deployedLink={"https://immense-reef-89584-27a74acb6456.herokuapp.com/"}
+              githubLink={"https://github.com/Nicholas-Gregory/Blog"}
+            />  
           </div>
         }
         {page === 'contact' &&

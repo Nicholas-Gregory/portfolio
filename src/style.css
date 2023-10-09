@@ -1,0 +1,26 @@
+#portfolioContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.projectImage {
+    width: 90%;
+    margin: 10px;
+}
+
+.card {
+    background-color: gainsboro;
+    margin: 10px;
+    margin-inline-start: 0;
+    width: 30%;
+}
+
+.card h2 {
+    margin: 10px;
+}
+
+.card a {
+    display: block;
+    margin: 10px;
+}
