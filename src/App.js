@@ -52,7 +52,7 @@ function App() {
 
       <section>
         {page === 'about' && 
-          <div id="about">
+          <div id="aboutContainer">
             Hi! I am a full-stack web developer with experience in many technologies including React, GraphQL, Express and SQL/No-SQL databases.
             This page is where I put information about my various projects, as well as links to my social media accounts, along with a resume for prospective employers.
             If you want to contact me, there is a Contact link on the navbar above with a form you can fill out.
@@ -63,11 +63,13 @@ function App() {
           <div id="portfolioContainer">
             {projects.map(project => 
               <>
-                <Project
-                  {...project}
-                />
+                <Project {...project} />
               </>  
             )}
+            <div className="card">
+              <h2>Flipside</h2>
+              <p style={{margin: "10px"}}>Coming soon...</p>
+            </div>
           </div>
         }
         {page === 'contact' &&
