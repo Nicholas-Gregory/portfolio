@@ -8,8 +8,10 @@ export default function Project({ imgPath, title, deployedLink, githubLink }) {
                     {title}
                 </h2>
                 <img className="projectImage" src={imgPath} />
-                <a href={deployedLink}>Deployment</a>
-                <a href={githubLink}>Github</a>
+                <div className="projectLinks">
+                    <a href={deployedLink}>Deployment</a>
+                    <a href={githubLink}>Github</a>
+                </div>
             </div>
         </>
     );

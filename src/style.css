@@ -14,13 +14,20 @@
     margin: 10px;
     margin-inline-start: 0;
     width: 30%;
+    height: 45vh;
+    position: relative;
 }
 
 .card h2 {
     margin: 10px;
 }
 
-.card a {
-    display: block;
+.card .projectLinks {
     margin: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.projectLinks a {
+    display: block;
 }

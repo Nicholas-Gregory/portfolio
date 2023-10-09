@@ -6,6 +6,19 @@ import { useState } from "react";
 import Project from "./Project";
 import './style.css'
 
+const projects = [{
+  imgPath: "https://raw.githubusercontent.com/Nicholas-Gregory/Blog/main/screenshot.png",
+  title: "Simple Blog",
+  deployedLink: "https://immense-reef-89584-27a74acb6456.herokuapp.com/",
+  githubLink: "https://github.com/Nicholas-Gregory/Blog"
+},
+{
+  imgPath: "https://github.com/Nicholas-Gregory/Note_Taker/raw/main/screenshot.png",
+  title: "Note Taker",
+  deployedLink: "https://nb-bootcamp-note-taker-f19da58a1664.herokuapp.com/",
+  githubLink: "https://github.com/Nicholas-Gregory/Note_Taker"
+}]
+
 function App() {
   const [page, setPage] = useState('about');
 
@@ -30,12 +43,13 @@ function App() {
         }
         {page === 'portfolio' &&
           <div id="portfolioContainer">
-            <Project
-              imgPath={"https://raw.githubusercontent.com/Nicholas-Gregory/Blog/main/screenshot.png"}
-              title={"Simple Blog"}
-              deployedLink={"https://immense-reef-89584-27a74acb6456.herokuapp.com/"}
-              githubLink={"https://github.com/Nicholas-Gregory/Blog"}
-            />  
+            {projects.map(project => 
+              <>
+                <Project
+                  {...project}
+                />
+              </>  
+            )}
           </div>
         }
         {page === 'contact' &&
