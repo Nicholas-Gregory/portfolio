@@ -6,6 +6,7 @@ import { useState } from "react";
 import Project from "./Project";
 import './style.css'
 import profile from './profile.jpg'
+import resume from './resume.pdf'
 
 const projects = [{
   imgPath: "https://raw.githubusercontent.com/Nicholas-Gregory/Blog/main/screenshot.png",
@@ -118,6 +119,7 @@ function App() {
         }
       </section>
 
+        <a href={resume} target="_blank" download={'./resume.pdf'}>Download Resume PDF</a>
       <Footer />
     </>
   );
