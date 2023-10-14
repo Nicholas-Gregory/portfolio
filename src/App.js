@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import { useState } from "react";
 import Project from "./Project";
 import './style.css'
+import profile from './profile.jpg'
 
 const projects = [{
   imgPath: "https://raw.githubusercontent.com/Nicholas-Gregory/Blog/main/screenshot.png",
@@ -53,6 +54,7 @@ function App() {
       <section>
         {page === 'about' && 
           <div id="aboutContainer">
+            <img src={profile}/><br />
             Hi! I am a full-stack web developer with experience in many technologies including React, GraphQL, Express and SQL/No-SQL databases.
             This page is where I put information about my various projects, as well as links to my social media accounts, along with a resume for prospective employers.
             If you want to contact me, there is a Contact link on the navbar above with a form you can fill out.
