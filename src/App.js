@@ -39,7 +39,7 @@ const projects = [{
   githubLink: "https://github.com/taylorgehrts/KIDDO_KARE"
 },
 {
-  imgPath: "https://github.com/Nicholas-Gregory/flipside/blob/master/screenshot.png",
+  imgPath: "https://github.com/Nicholas-Gregory/flipside/blob/master/screenshot.png?raw=true",
   title: "Flipside",
   deployedLink: "https://still-harbor-65568-a7492880d5f5.herokuapp.com/",
   githubLink: "https://github.com/Nicholas-Gregory/flipside"
