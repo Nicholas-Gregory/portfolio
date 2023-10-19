@@ -37,6 +37,12 @@ const projects = [{
   title: "Kiddo Kare",
   deployedLink: "https://hidden-eyrie-72629-9ca91495354a.herokuapp.com/",
   githubLink: "https://github.com/taylorgehrts/KIDDO_KARE"
+},
+{
+  imgPath: "https://github.com/Nicholas-Gregory/flipside/blob/master/screenshot.png",
+  title: "Flipside",
+  deployedLink: "https://still-harbor-65568-a7492880d5f5.herokuapp.com/",
+  githubLink: "https://github.com/Nicholas-Gregory/flipside"
 }]
 
 function App() {
@@ -69,10 +75,6 @@ function App() {
                 <Project {...project} />
               </>  
             )}
-            <div className="card">
-              <h2>Flipside</h2>
-              <p style={{margin: "10px"}}>Coming soon...</p>
-            </div>
           </div>
         }
         {page === 'contact' &&
